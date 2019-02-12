@@ -104,7 +104,14 @@ button:focus {
 }
 
 </style>
-
+<script type="text/javascript">
+   
+    function redirect() {
+        window.location = "../phishing/phishing2.html"
+    
+    }
+    
+    </script>
 </head>
 
 <body>
@@ -117,8 +124,8 @@ button:focus {
             <img src="../images/phishing/phishingemail1.png">
         </div>
         <div class="buttonDiv">
-            <div class="buttonLeft"><button onclick=""><h3>Real</h3></button></div>
-            <div class="buttonRight"><button onclick=""><h3>Fake</h3></button></div>
+            <div class="buttonLeft"><button onclick="alert('Incorrect! This email was a fake, you can tell by the bad hyperlink (m1crosoft instead of Microsoft). Please try again!')"><h3>Real</h3></button></div>
+            <div class="buttonRight"><button onclick="alert('Correct! Well Done!');redirect();"><h3>Fake</h3></button></div>
         </div>
     
 
